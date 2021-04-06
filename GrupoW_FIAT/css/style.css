@@ -1,0 +1,407 @@
+/* GOOGLE FONTS */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI3wi_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA_A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UXtHA_A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUXtHA_A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsunDXbtY.ttf) format('truetype');
+}
+/* COLORES */
+/* FUENTES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* LOGO */
+img {
+  vertical-align: top;
+  max-width: 100%;
+  margin-bottom: -30px;
+}
+.logo {
+  max-width: 60px;
+  position: relative;
+  z-index: 1;
+}
+/* MENÚ DE NAVEGACIÓN */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Lato', serif;
+  margin: 10px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: small;
+  font-weight: bold;
+  word-spacing: 3px;
+}
+.nav-links a:hover {
+  color: #fe0000;
+}
+.menu-burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fe0000;
+  margin: 5px;
+  cursor: pointer;
+}
+/* SKEWED BACKGROUND */
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fe0000;
+}
+.skewed-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4957d1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+}
+section .container {
+  position: relative;
+  min-width: 1000px;
+  min-height: 1800px;
+  display: flex;
+  z-index: 1000;
+}
+section .container .banner-img {
+  justify-content: center;
+  z-index: 2;
+}
+section .container .banner-img .title-banner {
+  margin-top: 10px;
+  margin-left: 255px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: center;
+}
+section .container .banner-img img {
+  width: 450px;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+section .container .contactForm {
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+section .container .contactForm .formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  font-family: 'Lato', serif;
+  margin-top: 50px;
+}
+.select-box {
+  width: 47%;
+  margin-bottom: 10px;
+}
+.select-box select {
+  height: 40px;
+  padding: 10px;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: 'Lato', serif;
+  width: 100%;
+  border: 1px solid #fe0000;
+}
+section .container .title {
+  margin-top: 50px;
+  color: #fe0000;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+}
+section .container .title::before {
+  content: '';
+  position: absolute;
+  left: 200px;
+  top: 25px;
+  height: 1px;
+  width: 100px;
+  background-color: lightcoral;
+}
+section .container .title::after {
+  content: '';
+  position: absolute;
+  right: 200px;
+  top: 25px;
+  height: 1px;
+  width: 100px;
+  background-color: lightcoral;
+}
+/* SECCIÓN DATOS PERSOANLES */
+section .container .formBox2 form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .container .formBox2 form .datos-personales {
+  width: calc(100% / 3 - 30px);
+  margin: 20px 0 12px 0;
+  font-family: 'Lato', serif;
+}
+section .container .formBox2 form .datos-personales input {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: 'Lato', serif;
+  border: 1px solid #fe0000;
+}
+section .container .subtitle {
+  font-family: 'Lato', serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section .container .formBox2 .contain-radio {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .container .formBox2 .contain-radio .subtitle {
+  font-family: 'Lato', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+section .container .contactForm .formBox2 .contain-radio .infoRadio {
+  height: 40px;
+  padding: 10px;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: 'Lato', serif;
+  text-align: center;
+  border: 1px solid #fe0000;
+  width: calc(100% * 3 - 30px);
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+          appearance: none;
+}
+input[type="radio"]:checked + label {
+  background-color: #fe0000;
+  color: #fff;
+}
+/* SECCIÓN FORMA DE PAGO */
+section .container .contactForm .formBox3 .first-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Lato', serif;
+}
+section .container .contactForm .formBox3 span {
+  font-family: 'Lato', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+section .container .contactForm .formBox3 .infoRadio {
+  height: 40px;
+  width: 300px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #fe0000;
+  margin-top: 5px;
+  text-align: center;
+}
+section .container .contactForm .formBox3 .two-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Lato', serif;
+  margin-top: 40px;
+}
+section .container .contactForm .formBox3 .two-row .info-enganche {
+  width: 47%;
+  margin-right: 50px;
+}
+section .container .contactForm .formBox3 .two-row .info-enganche input {
+  height: 40px;
+  padding: 10px;
+  line-height: 18px;
+  font-size: 14px;
+  font-family: 'Lato', serif;
+  width: 100%;
+  border: 1px solid #fe0000;
+}
+/* SECCIÓN COMENTARIOS */
+section .container .contactForm .formBox4 .info-comentarios {
+  width: 100% !important;
+}
+section .container .contactForm .formBox4 .info-comentarios span {
+  font-family: 'Lato', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+section .container .contactForm .formBox4 .info-comentarios textarea {
+  letter-spacing: 2px;
+  min-height: 120px;
+  max-height: 160px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Lato', serif;
+  width: 100% !important;
+  border: 1px solid #fe0000;
+  margin-bottom: 30px;
+}
+section .container .contactForm .formBox4 .botonEnviar {
+  float: right;
+}
+section .container .contactForm .formBox4 .botonEnviar input[type="submit"] {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato', serif;
+  background: #fff;
+  color: #000;
+  border-radius: 1px;
+  border: 1px solid #fe0000;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  width: 150px;
+  outline: none;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+section .container .contactForm .formBox4 .botonEnviar input[type="submit"]:hover {
+  background: #cb0000;
+  color: #fff;
+}
+input[type="checkbox"] + label {
+  display: block;
+  margin: 3px;
+  cursor: pointer;
+  padding: 3px;
+  font-family: 'Lato', serif;
+}
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 3px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding-left: 3px;
+  padding-bottom: 10px;
+  margin-right: 3px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+}
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+input[type=checkbox]:checked + label:before {
+  background-color: #fe0000;
+  border-color: #fe0000;
+  color: #fff;
+}
